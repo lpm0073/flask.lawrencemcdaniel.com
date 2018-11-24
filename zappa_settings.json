@@ -1,0 +1,9 @@
+{
+    "dev": {
+        "app_function": "app.app", 
+        "profile_name": "zappa", 
+        "project_name": "flask-lawrencem", 
+        "runtime": "python2.7", 
+        "s3_bucket": "flask.lawrencemcdaniel.com"
+    }
+}

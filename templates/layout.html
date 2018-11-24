@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    <title>{% block title %}{% endblock %} - Serverless Flask</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container">
+      {% block container %}{% endblock %}
+      <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2018 <a href="https://lawrencemcdaniel.com">lawrencemcdaniel.com</a>.
+        {% endblock %}
+      </div>
+    </div>
+    <script async src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
